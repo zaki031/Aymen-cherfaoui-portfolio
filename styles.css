@@ -86,14 +86,14 @@ body {
     background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
     animation: rotate 10s infinite;
     opacity: 0.8;
-    position: absolute;
+    position: fixed;
     filter: blur(5px);
     z-index:1;
   }
   #blur {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
     backdrop-filter: blur(12vmax);
   }
