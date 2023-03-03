@@ -1,17 +1,55 @@
 
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+  
+  50% {
+    scale: 1 1.5;
+  }
+  
+  to {
+    rotate: 360deg;
+  }
+}
 
 
 body{
-    background: #161616;
     font-family: 'Space Mono', monospace;
+    background: #161616;
 
 }
+.container{
+  color: white;
+  background-color: #161616;
+  width: full;
+  height: 100%;
+}
 
+.home{position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+
+
+.home{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  z-index: 3;
+
+}
+.about{
+  z-index: 3;
+  text-align: center;
+  color: white;
+  background-color: #161616;
+  margin-top: 100px;
+  width: full;
+}
 body {
-    background-color: black;
     height: 100vh;
     margin: 0rem;
-    overflow: hidden; 
   }
   
   @keyframes rotate {
@@ -27,6 +65,13 @@ body {
       rotate: 360deg;
     }
   }
+
+
+
+  *{
+    
+  }
+
   
   #blob {
     background-color: white;
@@ -41,34 +86,19 @@ body {
     animation: rotate 20s infinite;
     opacity: 0.8;
   }
-  
+
+
   #blur {
     height: 100%;
     width: 100%;
-    position: absolute;
     z-index: 2;
     backdrop-filter: blur(12vmax);
-  }
-  .home{
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    translate: -50% -50%;
-    z-index: 3;
-    color: white;
 
   }
-  
-  h1 {
-    font-size: 3.5rem;
-    
-  }
-  p{ 
-    font-size: 1rem;
-    z-index: 3;
 
-  }
+
+
+
 
   .navbar{
     
@@ -84,7 +114,11 @@ body {
 
 
 }
-  
+  .txt .links{
+    margin-top: 130px;
+    font-size: 3rem;
+
+  }
   .navbar .links{
     justify-content: center;
     display: flex; 
@@ -95,4 +129,32 @@ body {
   a{
     text-decoration: none; 
     color: white;
+  }
+.about h1{
+  font-size: 3rem;
+  background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
+  background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+  
+  .txt{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .txt h1{
+    rotate: 270deg;
+    font-size: 4rem;
+    margin-top: -100px;
+  }
+
+  .txt p{
+    margin-top: 100px;
+    max-width: 700px;
+    font-size: 1.3rem;
+  }
+  .home h1{
+    font-size: 5rem;
   }
