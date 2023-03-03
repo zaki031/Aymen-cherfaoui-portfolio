@@ -80,7 +80,7 @@ body {
     translate: -50% -50%;
     border-radius: 50%;
     background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
-    animation: rotate 14s infinite;
+    animation: rotate 10s infinite;
     opacity: 0.8;
   }
   .abt{
@@ -110,14 +110,23 @@ body {
 
 
 
+a:hover{
 
+  background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
+  background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    transition: .5s;
+
+}
 
   .navbar{
-    
+    background-color: #161616;
     position: fixed;
     left: 50%;
     translate:  -50%;
-
 
     background: none;
     text-align: center;
@@ -127,8 +136,9 @@ body {
 
 }
   .txt .links{
-    margin-top: 130px;
-    font-size: 3rem;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.5rem;
 
   }
   .navbar .links{
@@ -168,6 +178,9 @@ body {
     font-size: 1.3rem;
     z-index: 100;
   }
+  
+
   .home h1{
     font-size: 5rem;
   }
+  
