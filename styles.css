@@ -40,15 +40,14 @@ body{
 
 }
 .about{
+  margin-top: 100px;
   z-index: 3;
   text-align: center;
   color: white;
   background-color: #161616;
-  margin-top: 100px;
   width: full;
 }
 body {
-    height: 100vh;
     margin: 0rem;
   }
   
@@ -77,14 +76,27 @@ body {
     background-color: white;
     height: 34vmax;
     aspect-ratio: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
+    
     translate: -50% -50%;
     border-radius: 50%;
     background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
-    animation: rotate 20s infinite;
+    animation: rotate 14s infinite;
     opacity: 0.8;
+  }
+  .abt{
+    text-align: left;
+    margin-left: 50px;
+  }
+  #blob2{
+    background-color: white;
+    height: 25vmax;
+    aspect-ratio: 1;
+    
+    translate: 230% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
+    animation: rotate 14s infinite;
+    opacity: 0.6;
   }
 
 
@@ -154,6 +166,7 @@ body {
     margin-top: 100px;
     max-width: 700px;
     font-size: 1.3rem;
+    z-index: 100;
   }
   .home h1{
     font-size: 5rem;
