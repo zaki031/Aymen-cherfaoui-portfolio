@@ -92,7 +92,7 @@ body {
     height: 25vmax;
     aspect-ratio: 1;
     
-    translate: 230% -50%;
+    translate: 250% -80%;
     border-radius: 50%;
     background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
     animation: rotate 14s infinite;
