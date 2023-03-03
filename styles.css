@@ -49,32 +49,30 @@ body {
     z-index: 2;
     backdrop-filter: blur(12vmax);
   }
-  
-  h1 {
-    font-size: 5rem;
-    color: white;
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
+  .home{
+    text-align: center;
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     z-index: 3;
+    color: white;
+
+  }
+  
+  h1 {
+    font-size: 3.5rem;
+    
   }
   p{ 
     font-size: 1rem;
-    color: white;
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
-    position: absolute;
-    left: 50%;
-    top: 63%;
-    translate: -50% -50%;
     z-index: 3;
 
   }
 
   .navbar{
     
-    position: absolute;
+    position: fixed;
     left: 50%;
     translate:  -50%;
 
