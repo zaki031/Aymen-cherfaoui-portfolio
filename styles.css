@@ -42,13 +42,22 @@ body{
   z-index: 3;
 
 }
+
+.projects{
+  margin-top: 50vh;
+  z-index: 4;
+  text-align: center;
+  color: white;
+  width: 100%;
+  background: #161616;
+}
 .about{
-  margin-top: 100vh;
+  margin-top: 80vh;
   z-index: 4;
   text-align: center;
   color: white;
   background-color: #161616;
-  width: full;
+  width: 100%;
 }
 body {
     margin: 0rem;
@@ -67,6 +76,21 @@ body {
       rotate: 360deg;
     }
   }
+
+  @keyframes rotat {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 180deg;
+    }
+  }
+
 
 
 
@@ -87,7 +111,6 @@ body {
     animation: rotate 10s infinite;
     opacity: 0.8;
     position: fixed;
-    filter: blur(5px);
     z-index:1;
   }
   #blur {
@@ -95,27 +118,35 @@ body {
     width: 100%;
     position: fixed;
     z-index: 2;
-    backdrop-filter: blur(12vmax);
+    backdrop-filter: blur(7vmax);
+  }
+  .links a{
+    border-bottom: solid 1px white;
+    padding: 5px;
+}
+.links{
+  padding: 10px;
+  margin-top: 30px;
+  overflow: hidden;
+
+}  
+  .cv{
+    z-index: 100;
+    text-align: left;
   }
   .abt{
+    z-index: 100;
+    position: relative;
     text-align: left;
     margin-left: 50px;
   }
-  #blob2{
-    background-color: white;
-    height: 25vmax;
-    aspect-ratio: 1;
-    
-    translate: 250% -80%;
-    border-radius: 50%;
-    background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
-    animation: rotate 14s infinite;
-    opacity: 0.6;
-        filter: blur(2px);
-
+  img{
+    position: relative;
+    z-index: 100;
+    width: 400px;
+    height: 500px;
   }
-
-
+  
 
 
 a:hover{
@@ -132,12 +163,10 @@ a:hover{
 
   .navbar{
     
-    background-color: #161616;
-    position: fixed;
+    position: absolute;
     left: 50%;
     translate:  -50%;
-
-    background: none;
+width: 100%;
     text-align: center;
     margin-top: 20px;
     z-index: 4;
@@ -161,30 +190,42 @@ a:hover{
     text-decoration: none; 
     color: white;
   }
+.projects h1,
 .about h1{
-  font-size: 4rem;
-  background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
-  background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
+  font-size: 2.5rem;
+  color: white;
+  z-index: 100;
+  position: relative;
 }
   
   .txt{
+    
     display: flex;
-    justify-content: space-evenly;
+    margin-left: 100px;
+    text-align: left;
+
   }
   .txt h1{
     rotate: 270deg;
     font-size: 4rem;
     margin-top: -100px;
   }
-
+  .pics{
+    z-index: 100;
+    font-size: 1.5rem;
+    margin-top: 100px;
+    color: white;
+    padding: 30px;
+    
+  }
+  
+  
   .txt p{
     margin-top: 100px;
     max-width: 700px;
     font-size: 1.3rem;
+
+
     z-index: 100;
   }
   
@@ -193,3 +234,47 @@ a:hover{
     font-size: 5rem;
   }
   
+
+
+
+
+  
+.container{
+  padding:15px 9%;
+  padding-bottom: 100px;
+}
+
+.container .heading{
+  text-align: center;
+  padding-bottom: 15px;
+  color:#fff;
+  text-shadow: 0 5px 10px rgba(0,0,0,.2);
+  font-size: 50px;
+}
+
+.container .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap:15px;
+}
+.container .box-container .box h2{
+  color: #fff;
+
+
+}
+.container .box-container .box{
+  z-index: 100;
+
+  background-color: #161616;
+  border-radius: 5px;
+  text-align: center;
+  padding:30px 20px;
+}
+
+
+
+@media (max-width:768px){
+  .container{
+      padding:20px;
+  }
+}
