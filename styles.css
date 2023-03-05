@@ -271,13 +271,14 @@ font-weight: bold;
 
 .contact button{
 
-  border-color:   #CF8BF3;
+  border-color:  #FDB99B
+  ;
+  background-color: #161616;
   ;
   font-size: 2rem;
  padding: 10px;
  color: white;
  z-index: 100;
- background: transparent;
  position: relative;
  border-radius: 8px;
 }
