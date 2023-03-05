@@ -55,7 +55,7 @@ body{
   justify-content: space-between;
 }
 .projects{
-  margin-top: 50vh;
+  margin-top: 20vh;
   z-index: 4;
   text-align: center;
   color: white;
@@ -287,14 +287,51 @@ font-weight: bold;
   font-weight: bold;
 }
 .box{
+
+  justify-content: space-between;
+  padding: 50px;
+  z-index: 1000;
+  border-radius: 8px;
+  border: solid 1px #FDB99B ;
+  position: relative;
+
+}
+.top{
   display: flex;
   justify-content: space-between;
 }
-.box a{
-  
-  font-weight: 100;
-  font-size: 4rem;
-  color: white;
-  z-index: 100;
+.top a{
+  font-size: 1.5rem;
   border: none;
+}
+.box h1{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.box:hover{
+  background-color: #161616;
+  transition: 1s;
+}
+
+
+.box{
+  overflow: hidden;
+  height: 150px;
+  width: 300px;
+  background: radial-gradient(rgba(255,255,255,0.2) 8%,
+  transparent 9%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+}
+.techs{
+  display: flex;
+}
+
+
+.techs p{
+  margin-left: 10px;
+  z-index: 10000;
+  padding: 5px;
+  border: solid 1px #FDB99B;
+  border-radius: 8px;
 }
