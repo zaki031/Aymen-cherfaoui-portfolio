@@ -113,7 +113,7 @@ body {
   #blob {
 
     background-color: white;
-    height: 26vmax;
+    height: 15vmax;
     aspect-ratio: 1;
     
     translate: -50% -10%;
@@ -149,8 +149,7 @@ body {
   .abt{
     z-index: 100;
     position: relative;
-    text-align: left;
-    margin-left: 50px;
+    text-align: center;
   }
   img{
     position: relative;
