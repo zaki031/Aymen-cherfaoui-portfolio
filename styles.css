@@ -261,6 +261,9 @@ width: 100%;
   justify-content: space-evenly;
 
 }
+html{
+  scroll-behavior: smooth;
+}
 h1{
 font-weight: bold;
 }
