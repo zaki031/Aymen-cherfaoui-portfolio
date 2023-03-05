@@ -310,7 +310,7 @@ font-weight: bold;
 }
 .box:hover{
   background-color: #161616;
-  transition: 1s;
+  transition: 0.3s;
 }
 
 
@@ -322,6 +322,12 @@ font-weight: bold;
   transparent 9%);
   background-position: 0% 0%;
   background-size: 5vmin 5vmin;
+  background-color: #161616;
+
+  z-index: 1000;
+}
+.box p {
+  margin-left: 20px;
 }
 .techs{
   display: flex;
@@ -329,9 +335,11 @@ font-weight: bold;
 
 
 .techs p{
-  margin-left: 10px;
+  
   z-index: 10000;
   padding: 5px;
   border: solid 1px #FDB99B;
   border-radius: 8px;
+
+  background-color: rgb(22,22,25);
 }
