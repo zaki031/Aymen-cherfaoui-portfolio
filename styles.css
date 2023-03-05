@@ -1,4 +1,9 @@
-
+:root {  
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
+ 
 @keyframes rotate {
   from {
     rotate: 0deg;
@@ -42,7 +47,13 @@ body{
   z-index: 3;
 
 }
-
+.top a{
+  font-size: 3.3rem;
+}
+.top{
+  display: flex;
+  justify-content: space-between;
+}
 .projects{
   margin-top: 50vh;
   z-index: 4;
@@ -120,7 +131,7 @@ body {
     z-index: 2;
     backdrop-filter: blur(7vmax);
   }
-  .links a{
+  .about a{
     border-bottom: solid 1px white;
     padding: 5px;
 }
@@ -128,6 +139,7 @@ body {
   padding: 10px;
   margin-top: 30px;
   overflow: hidden;
+
 
 }  
   .cv{
@@ -238,43 +250,58 @@ width: 100%;
 
 
 
-  
-.container{
-  padding:15px 9%;
-  padding-bottom: 100px;
-}
-
-.container .heading{
-  text-align: center;
-  padding-bottom: 15px;
-  color:#fff;
-  text-shadow: 0 5px 10px rgba(0,0,0,.2);
-  font-size: 50px;
-}
-
-.container .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  gap:15px;
-}
-.container .box-container .box h2{
-  color: #fff;
-
-
-}
-.container .box-container .box{
-  z-index: 100;
-
-  background-color: #161616;
-  border-radius: 5px;
-  text-align: center;
-  padding:30px 20px;
-}
-
-
-
-@media (max-width:768px){
-  .container{
-      padding:20px;
+  @keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
   }
+
+.python h1{
+  animation: background-pan 3s linear infinite;
+ background: linear-gradient(to right, aquamarine, mediumpurple);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+.container2{
+  display: flex;
+  text-align: left;
+  justify-content: space-evenly;
+
+}
+.contact{
+  padding: 50px;
+}
+
+.contact button{
+
+  border-color:   #CF8BF3;
+  ;
+  font-size: 2rem;
+ padding: 10px;
+ color: white;
+ z-index: 100;
+ background: transparent;
+ position: relative;
+ border-radius: 8px;
+}
+.contact h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+.box{
+  display: flex;
+  justify-content: space-between;
+}
+.box a{
+  font-weight: 100;
+  font-size: 4rem;
+  color: white;
+  z-index: 100;
+  border: none;
 }
