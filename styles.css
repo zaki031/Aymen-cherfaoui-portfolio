@@ -60,7 +60,7 @@ body{
   text-align: center;
   color: white;
   width: 100%;
-  background: #161616;
+  border-radius: 8px;
 }
 .about{
   margin-top: 80vh;
@@ -160,18 +160,6 @@ body {
   }
   
 
-
-a:hover{
-
-  background: linear-gradient(to right, #A770EF,#CF8BF3, #FDB99B);
-  background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    transition: .5s;
-
-}
 
   .navbar{
     
@@ -274,6 +262,10 @@ width: 100%;
   justify-content: space-evenly;
 
 }
+h1{
+font-weight: bold;
+}
+
 .contact{
   padding: 50px;
 }
@@ -299,6 +291,7 @@ width: 100%;
   justify-content: space-between;
 }
 .box a{
+  
   font-weight: 100;
   font-size: 4rem;
   color: white;
