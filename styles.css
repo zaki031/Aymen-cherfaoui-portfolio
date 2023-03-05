@@ -131,9 +131,21 @@ body {
     z-index: 2;
     backdrop-filter: blur(7vmax);
   }
-  .about a{
-    border-bottom: solid 1px white;
+  .about .links a{
     padding: 5px;
+    justify-content: space-between;
+  padding: 50px;
+  z-index: 1000;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+  height: 150px;
+  width: 300px;
+  background: radial-gradient(rgba(255,255,255,0.2) 8%,
+  transparent 9%);
+  background-position: 0% 0%;
+  background-size: 2vmin 2vmin;
+
 }
 .links{
   padding: 10px;
@@ -237,24 +249,6 @@ width: 100%;
 
 
 
-  @keyframes background-pan {
-    from {
-      background-position: 0% center;
-    }
-    
-    to {
-      background-position: -200% center;
-    }
-  }
-
-.python h1{
-  animation: background-pan 3s linear infinite;
- background: linear-gradient(to right, aquamarine, mediumpurple);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
-}
 .container2{
   display: flex;
   text-align: left;
@@ -345,4 +339,25 @@ font-weight: bold;
   border-radius: 8px;
 
   background-color: rgb(22,22,25);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container2{
+      display: block;
+      padding: 10px;
+      text-align: center;
+    
+  }
+  .box{
+    width: 250px;
+    margin: auto;
+
+
+
+  }
+  .txt{
+    margin: 0;
+    padding: 10px;
+  }
 }
