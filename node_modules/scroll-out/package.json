@@ -1,0 +1,38 @@
+{
+  "name": "scroll-out",
+  "version": "2.2.12",
+  "description": "Animate on scroll with ease",
+  "main": "lib/index.js",
+  "types": "types/index",
+  "typings": "types/index",
+  "scripts": {
+    "build": "npm run \"build:cjs\" && npm run \"build:iife\" && npm run \"build:iife:compressed\"",
+    "build:cjs": "rollup -c ./config/rollup-cjs.config.js",
+    "build:dev": "rollup -c ./config/rollup-iife.config.js",
+    "build:debug": "rollup -w -c ./config/rollup-iife.config.js",
+    "build:iife": "rollup -c ./config/rollup-iife.config.js",
+    "build:iife:compressed": "rollup -c ./config/rollup-iife.compressed.js",
+    "compress": "uglifyjs --config-file ./config/compress.json -o dist/scroll-out.min.js dist/scroll-out.js",
+    "clean": "node_modules/.bin/del-cli -f dist lib",
+    "format": "prettier --print-width 120 --single-quote --no-semi --list-different --write \"src/**/*.js\"",
+    "preversion": "npm run rebuild",
+    "postversion": "git push --follow-tags && npm publish",
+    "rebuild": "npm run clean && npm run build && npm run compress",
+    "test": "npm run build:dev && ./node_modules/.bin/cypress run",
+    "test:debug": "npm run build:debug & ./node_modules/.bin/cypress open"
+  },
+  "author": "Christopher Wallis <christopher.j.wallis@gmail.com> (http://notoriousb1t.com)",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/uglify-js": "^3.0.3",
+    "cypress": "^4.5.0",
+    "del-cli": "^1.1.0",
+    "rollup": "^0.60.7",
+    "rollup-plugin-babel-minify": "^5.0.0",
+    "rollup-plugin-filesize": "^2.0.0",
+    "rollup-plugin-typescript2": "^0.22.1",
+    "rollup-plugin-uglify": "^4.0.0",
+    "typescript": "^3.0.1",
+    "uglify-js": "^3.4.0"
+  }
+}

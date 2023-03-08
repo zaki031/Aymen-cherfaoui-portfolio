@@ -10,7 +10,7 @@
 <body class="bg-bg">
   <div class="navbar">
     <div class="links">
-              <a href="#" >01.Home</a>
+    <a href="#" >01.Home</a>
     <a href="#about">02.About</a>
     <a href="#projects">03.Projects</a>
     <a href="#contact">04.Contact</a>
@@ -24,8 +24,8 @@
 
        <div class="home" id="#home">
         
-          <h1>Aymen cherfaoui</h1>
-        <p>A very passionate backend developer</p>
+          <h1 >Aymen cherfaoui</h1>
+        <p data-scroll>A very passionate backend developer</p>
         
         
        </div>
@@ -37,11 +37,11 @@
 
         </div>
         
-        <h1 >I'm Aymen, a backend developer based in Algeria.</h1>
+        <h1 data-scroll >I'm Aymen, a backend developer based in Algeria.</h1>
         <div class="txt">
           
          <div class="cv">
-           <p className="">
+           <p className="" data-scroll>
           I'm an experienced backend developer skilled in Golang, Python, TypeScript, and JavaScript. I design and implement complex architectures for robust web applications, APIs, and microservices. My passion for writing clean and efficient code drives me to stay up-to-date with the latest industry technologies and best practices.
         </p>
         <div class="links">
@@ -69,11 +69,11 @@
                   <h2>03.Projects</h2>
       
         </div>
-        <h1>Here are some cool stuff I made </h1 >
+        <h1 data-scroll>Here are some cool stuff I made </h1 >
           <br><br><br>
           <div class="container2">
             <div class="right">
-              <div class="box">
+              <div class="box" >
                 <div class="top">
                                     <h1>Color Switch</h1>
                                     <a><i class="uil uil-github"></i></a>
@@ -91,7 +91,7 @@
                 
               </div>
               <br><br><br>
-              <div class="box">
+              <div class="box" >
                 <div class="top">
                   <h1>Flask planner</h1>
                   <a><i class="uil uil-github"></i></a>
@@ -105,7 +105,7 @@
               </div>
               <br><br><br>
 
-              <div class="box">
+              <div class="box" >
                 <div class="top">
                   <h1>nyaanime app</h1>
                   <a><i class="uil uil-github"></i></a>
@@ -174,8 +174,14 @@
               <h2>04.Contact</h2>
   
     </div>
-           <h1>Ready to get some work done?</h1>
-           <button>Say hi!</button>
+           <h1 data-scroll>Ready to get some work done?</h1>
+           <form action="">
+
+            <input type="text" name="name" placeholder="Name"><br>
+            <input type="text" name="email" placeholder="E-mail"><br>
+            <input type="text" name="msg" placeholder="Message"><br>
+            <button type="submit">Contact me</button>
+           </form>
           </div>
       
       </div>
@@ -189,11 +195,17 @@
 
 
 
-  
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
+    <script>
+      ScrollOut({
+        once:true
+      });
+    </script>
 
 
 </body>
+
 
 <script type="text/javascript" src="./script.js"></script>
 

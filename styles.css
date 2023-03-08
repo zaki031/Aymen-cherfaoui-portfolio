@@ -268,16 +268,15 @@ font-weight: bold;
 
 .contact button{
 
-  border-color:  #FDB99B
+  
+  color: #fff
   ;
-  background-color: #161616;
-  ;
+  background-color: transparent;
+  border: 1px solid #A770EF;
   font-size: 2rem;
  padding: 10px;
- color: white;
  z-index: 100;
  position: relative;
- border-radius: 8px;
 }
 .contact h1{
   font-size: 4rem;
@@ -360,4 +359,28 @@ font-weight: bold;
     margin: 0;
     padding: 10px;
   }
+
+}
+
+
+[data-scroll]{
+  transition: all 1.5s;
+
+}[data-scroll="in"]{
+  opacity: 1;
+  transform: translateX(0);
+}
+[data-scroll="out"]{
+  opacity: 0;
+  transform: translateX(-200px);
+}
+
+
+.left [data-scroll="in"]{
+  opacity: 1;
+  transform: translateX(0);
+}
+.left [data-scroll="out"]{
+  opacity: 0;
+  transform: translateX(-200px);
 }

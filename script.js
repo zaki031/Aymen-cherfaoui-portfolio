@@ -1,4 +1,4 @@
-/* -- Glow effect -- */
+
 
 const blob = document.getElementById("blob");
 
